@@ -1,54 +1,89 @@
+🌦️ Clima-iOS13
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Clima-iOS13 is a weather application built with Swift that displays real-time weather data based on the user's current location or searched cities.
 
-#  Clima
+This project was originally started using starter code from a Swift development course and has been extended and improved by me.
 
-## Our Goal
+---
 
-It’s time to take our app development skills to the next level. We’re going to introduce you to the wonderful world of Application Programming Interfaces (APIs) to grab live data from the internet. If you’re dreaming of making that Twitter-powered stock trading app then you’re about add some serious tools to your toolbelt!
+ 🧠 About the Project
 
+Clima-iOS13 is an iOS weather app that fetches weather data from a public API and presents it in a clean and simple UI.  
+The goal of this project was to practice working with APIs, location services, and core iOS development concepts.
 
-## What you will create
+---
+ ✨ My Contributions & Improvements
 
-By the end of the module, you will have made a beautiful, dark-mode enabled weather app. You'll be able to check the weather for the current location based on the GPS data from the iPhone as well as by searching for a city manually. 
+In addition to the original course implementation, I made the following changes:
 
-## What you will learn
+- Improved code readability and structure
+- Refactored logic into separate components
+- Enhanced UI and user experience
+- Added better error handling for API requests
+- Cleaned up variable and function naming
+- Added comments for better maintainability
 
-* How to create a dark-mode enabled app.
-* How to use vector images as image assets.
-* Learn to use the UITextField to get user input. 
-* Learn about the delegate pattern.
-* Swift protocols and extensions. 
-* Swift guard keyword. 
-* Swift computed properties.
-* Swift closures and completion handlers.
-* Learn to use URLSession to network and make HTTP requests.
-* Parse JSON with the native Encodable and Decodable protocols. 
-* Learn to use Grand Central Dispatch to fetch the main thread.
-* Learn to use Core Location to get the current location from the phone GPS. 
+---
 
-### Condition Codes
-```
-switch conditionID {
-        case 200...232:
-            return "cloud.bolt"
-        case 300...321:
-            return "cloud.drizzle"
-        case 500...531:
-            return "cloud.rain"
-        case 600...622:
-            return "cloud.snow"
-        case 701...781:
-            return "cloud.fog"
-        case 800:
-            return "sun.max"
-        case 801...804:
-            return "cloud.bolt"
-        default:
-            return "cloud"
-        }
-```
+ 🛠 Built With
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+- Swift
+- Xcode
+- UIKit
+- Core Location
+- REST API (Weather API)
+- MVC Architecture
 
-![End Banner](Documentation/readme-end-banner.png)
+---
+
+ 📱 Features
+
+- Get current weather based on device location
+- Search weather by city name
+- Display temperature and weather conditions
+- Dynamic weather icons
+- Responsive UI for different screen sizes
+
+---
+
+ 📚 Learning Outcomes
+
+Through this project, I learned and practiced:
+
+- Working with REST APIs in Swift
+- Parsing JSON data
+- Using Core Location
+- MVC architecture in iOS
+- Handling asynchronous network calls
+- Improving code quality and structure
+- Using Git and GitHub for version control
+
+---
+
+ 🎓 Course Credit
+
+Starter code and initial project idea were provided as part of a Swift development course.
+
+- Course: **iOS & Swift - The Complete iOS App Development Bootcamp**
+- Instructor: **Angela Yu**
+- Platform: **Udemy**
+
+All additional modifications, refactoring, and improvements were implemented by me.
+
+---
+
+ 🚀 Future Improvements
+
+- Add hourly and weekly forecasts
+- Improve UI animations
+- Add unit tests
+- Migrate architecture to MVVM
+- Cache weather data for offline usage
+
+---
+
+ 👤 Author
+
+**Damoon Saber**  
+iOS Developer (Swift)  
+GitHub: https://github.com/Damoon03

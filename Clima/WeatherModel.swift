@@ -3,10 +3,10 @@
 //  Clima
 //
 //  Created by Damoon saber on 10/11/1404 AP.
-//  Copyright © 1404 AP App Brewery. All rights reserved.
 //
 
 import Foundation
+
 struct WeatherModel {
     let conditionId: Int
     let cityName: String

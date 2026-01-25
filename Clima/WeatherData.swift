@@ -3,7 +3,6 @@
 //  Clima
 //
 //  Created by Damoon saber on 10/10/1404 AP.
-//  Copyright © 1404 AP App Brewery. All rights reserved.
 //
 
 import Foundation

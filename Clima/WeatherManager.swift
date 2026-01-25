@@ -3,10 +3,10 @@
 //  Clima
 //
 //  Created by Damoon saber on 10/7/1404 AP.
-//  Copyright © 1404 AP App Brewery. All rights reserved.
 //
 
 import Foundation
+import CoreLocation
 
 protocol WeatherManagerDelegate {
     func didUpdateWeather(_ WeatherManager: WeatherManager, weather: WeatherModel)
@@ -14,12 +14,17 @@ protocol WeatherManagerDelegate {
 }
 
 struct WeatherManager {
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=a6b34091937ee4bc4deb3950a3bfaf46&q=london&units=metric"
-    
+    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=API_KEY&units=metric"
+
     var delegate: WeatherManagerDelegate?
     
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)"
+        performRequest(with: urlString)
+    }
+    
+    func fetchWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
         performRequest(with: urlString)
     }
     
@@ -33,7 +38,7 @@ struct WeatherManager {
             //3. Give the session a task
             let task =  session.dataTask(with: url) { data, response, error in
                 if error != nil {
-                    delegate?.didFailWithError(error: error!)
+                    self.delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
